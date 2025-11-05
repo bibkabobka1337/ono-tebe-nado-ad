@@ -61,23 +61,23 @@
 
 .cover {
   position: relative;
+  z-index: 0;
   height: 757px;
   padding: 165px 50px 50px;
   color: #fff;
   background-image: url("../images/cover.jpg");
   background-position: center;
   background-size: cover;
-  z-index: 0;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
 }
 
 .cover-title {
@@ -94,12 +94,12 @@
   display: block;
 }
 
-.cover-title span+span {
+.cover-title span + span {
   margin: 20px 0;
   text-align: center;
 }
 
-.cover-title span+span+span {
+.cover-title span + span + span {
   margin: 0;
   text-align: right;
 }
